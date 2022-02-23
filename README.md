@@ -1,2 +1,30 @@
 # eRobotica_Mambo_Gazebo
-Mambo parrot quadrotor simulator
+Um modelo ROS/Gazebo do Mambo parrot adaptado de RotorS simulator por Davi Juvêncio (davi.j.g.sousa@ee.ufcg.edu.br).
+
+## Pré requisito
+- Ubuntu 20.04
+- ROS Noetic 
+## Installation
+
+```bash
+mkdir -p eRobotica_Mambo_Gazebo/src && cd eRobotica_Mambo_Gazebo/src
+
+sudo apt install build-essential python3-rosdep python3-catkin-tools
+sudo apt install libusb-dev python3-osrf-pycommon libspnav-dev libbluetooth-dev libcwiid-dev libgoogle-glog-dev
+sudo apt install ros-noetic-mavros ros-noetic-octomap-ros 
+
+git clone https://github.com/ethz-asl/mav_comm
+git clone https://github.com/davijuvencio/eRobotica_Mambo_Gazebo
+git clone https://github.com/ros-drivers/joystick_drivers
+
+cd ..
+catkin_make
+
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Davi_Simulator/models
+export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/Davi_Simulator/worlds
+```
+
+##### Simular
+```bash
+roslaunch rotors_gazebo Mambo.launch
+```
