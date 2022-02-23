@@ -1,0 +1,12 @@
+# Mambo vehicle parameters
+mass: 0.0635
+inertia: {xx: 0.5829e-4, xy: 0, xz: 0, yy: 0.7169e-4, yz: 0, zz: 1e-4}
+
+# angle should be expressed in rad
+# direction 1 means counter clockwise, -1 clockwise
+# The order of the rotors matters for the calculation of the allocation matrix.
+rotor_configuration:
+  '0': {angle: -0.9341, arm_length: 0.1424, rotor_force_constant: 8.54858e-06, rotor_moment_constant: 1.6e-2, direction: 1.0}
+  '1': {angle: 2.2388, arm_length: 0.1424, rotor_force_constant: 8.54858e-06, rotor_moment_constant: 1.6e-2, direction: 1.0}
+  '2': {angle: 0.9352, arm_length: 0.1424, rotor_force_constant: 8.54858e-06, rotor_moment_constant: 1.6e-2, direction: -1.0}
+  '3': {angle: -2.2400, arm_length: 0.1424, rotor_force_constant: 8.54858e-06, rotor_moment_constant: 1.6e-2, direction: -1.0}
