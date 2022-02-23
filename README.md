@@ -18,10 +18,8 @@ git clone https://github.com/davijuvencio/eRobotica_Mambo_Gazebo
 git clone https://github.com/ros-drivers/joystick_drivers
 
 cd ..
+source /opt/ros/noetic/setup.bash
 catkin_make
-
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Davi_Simulator/models
-export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/Davi_Simulator/worlds
 ```
 
 ##### Simular
