@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='Tatame_eRobotica'>
+    <model name='Tatame_model'>
+      <static>1</static>
+      <pose>0.004587 -0.003549 0.019779 3.14159 0.001283 3.14159</pose>
+      <link name='Tatame_link'>
+        <visual name='floor'>
+          <pose>-5 -5 0.01 0 -0 0</pose>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>Tatame.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='floor_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>10 10 0.02</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

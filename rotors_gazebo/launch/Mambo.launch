@@ -2,7 +2,7 @@
 <launch>
   <arg name="mav_name" default="mambo"/>
   <!--<arg name="world_name" default="C222_simple"/>-->
-  <arg name="world_name" default="no_roof_small_warehouse"/>
+  <arg name="world_name" default="Davi"/>
   <arg name="enable_logging" default="false" />
   <arg name="enable_ground_truth" default="true" />
   <arg name="log_file" default="$(arg mav_name)" />
