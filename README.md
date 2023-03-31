@@ -1,5 +1,5 @@
-# eRobotica_Mambo_Gazebo
-Um modelo ROS/Gazebo do Mambo parrot adaptado de RotorS simulator por Davi Juvêncio (davi.j.g.sousa@ee.ufcg.edu.br).
+# Parrot Mambo Gazebo Simulator
+Um modelo ROS/Gazebo do Mambo parrot adaptado de RotorS simulator por Davi Juvêncio (davijuvencio@gmail.com).
 
 ## Pré requisito
 - Ubuntu 20.04
